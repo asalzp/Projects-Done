@@ -1,0 +1,109 @@
+body{
+  font-family: 'Quicksand';
+  background-color: rgb(158, 158, 158);
+}
+
+.container{
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.container > div{
+  margin: 50px auto;
+}
+
+.intro{
+    margin: 5%;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.text{
+    text-align: left;
+    margin: 10%;
+}
+.pictures{
+    justify-self: right;
+    position: relative;
+    margin: 10%;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+}
+
+.list{
+  text-align: left;
+  list-style: none;
+  
+}
+@media (max-width: 650px){
+  .grid{
+    grid-template-columns: 100%;
+  }
+  .pictures{
+    width: 300;
+    height: 300;
+    justify-self: center;
+    margin: 10%;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+    transition: all ease in-out .2s;
+  }
+  .text{
+      font-size: x-large;
+      text-align: left;
+    margin: 10%;
+  }
+}
+.font{
+    font-size: x-large;
+}
+
+.submit-button-wrapper{
+  margin: 20px;
+}
+
+.links-and-contact{
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.links{
+  justify-self: center;
+}
+
+.links-list{
+  list-style: none;
+  padding: 0;
+}
+
+@media(max-width: 650px){
+  .links-and-contact{
+    grid-template-columns: 100%;
+  }
+
+}
+
+form input, textarea{
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+}
+
+form input[type="submit"]{
+  width: 250px;
+}
+
+.submit-button-wrapper{
+  margin: 20px;
+}
+hr{
+  border: 0;
+  height: 0.5px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.75), rgba(0,0,0,0));
+}
